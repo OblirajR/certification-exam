@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div>
+    <div>
+        <div id="topbar">
+            <div id="left-menu">
+                <div id="topbar-logo">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo"/>
+                    <p id="topbar-name">Kafene</p>
+                </div>
+                <div>
+                    <a href="./orders.html" class="topbar-menu">Orders</a>
+                    <a href="./product.html"  class="topbar-menu">Products</a>
+                    <a href="./user.html" id="user" class="topbar-menu">Users</a>
+                </div>
+            </div>
+            <a href="./index.html" id="log" class="logout-menu">Logout</a>
+        </div>
+        
+
+    </div>
+
+    <div id="user-main"  class="password">
+        <div id="user-wrapper">
+            <h1 id="user-head">Users</h1>
+            <div id="userlist-wrapper">
+                <form id="user-form">
+                    <input class="usersearch" type="search" placeholder="Search by name" id="searchbox" onkeyup="search()"> 
+                    <input type="reset" class="userbutton" value="Reset" id="reset">
+                </form>
+
+                <div>
+                    <table id="user-table">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th style="min-width: 100px;">DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id="parts">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <script src="./user.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>

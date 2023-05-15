@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div id="topbar">
+            <div id="left-menu">
+                <div id="topbar-logo">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo"/>
+                    <p id="topbar-name">Kafene</p>
+                </div>
+                <div>
+                    <a href="./orders.html" class="topbar-menu" id="orders">Orders</a>
+                    <a href="./product.html" class="topbar-menu">Products</a>
+                    <a href="./user.html" class="topbar-menu">Users</a>
+                </div>
+                
+            </div>
+            <a href="./index.html" class="logout-menu" id="log">Logout</a>
+        </div>
+       
+        
+
+        <div id="orderspage" class="password">
+            <h1 id="ordersh1">Orders</h1>
+            <div id="homepage-order">
+                <div id="orderpage-left">
+                    <h3>Filters</h3>
+                    <div id="homepage-filters">
+                        <p>Count: <span id="countpara">11</span></p>
+                        <label class="filter-checkbox"><input type="checkbox" name="orders-new" id="orders-new" checked>New </label>
+                        <label class="filter-checkbox"><input type="checkbox" name="orders-packed" id="orders-packed" checked>Packed </label>
+                        <label class="filter-checkbox"><input type="checkbox" name="orders-transit" id="orders-transit" checked>In Transit</label>
+                        <label class="filter-checkbox"><input type="checkbox" name="orders-delivered" id="orders-delivered" checked>Delivered </label>
+
+                    </div>
+                </div>
+                <div id="orderpage-right">
+                    <table id="homepage-table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="./orders.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>

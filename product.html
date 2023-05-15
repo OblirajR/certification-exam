@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div >
+        <div id="topbar">
+            <div id="left-menu">
+                <div id="topbar-logo">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo"/>
+                    <p id="topbar-name">Kafene</p>
+                </div>
+                <div>
+                    <a href="./orders.html" class="topbar-menu">Orders</a>
+                    <a href="./product.html" id="products" class="topbar-menu">Products</a>
+                    <a href="./user.html" class="topbar-menu">Users</a>
+                </div>
+            </div>
+            <a href="./index.html" id="log" class="logout-menu">Logout</a>
+        </div>
+       
+        <div id="orderspage" class="password">
+            <h1 id="ordersh1">Products</h1>
+            <div id="homepage-order">
+                <div id="orderpage-left">
+                    <h3>Filters</h3>
+                    <div id="homepage-filters">
+                        <p>Count: <span id="countspan">29</span></p>
+                        <label class="filter-checkbox"><input type="checkbox" name="orders-new" id="orders-expired" checked>Expired </label>
+                        <label class="filter-checkbox"><input type="checkbox" name="orders-packed" id="orders-lowstock" checked>Low stock</label>
+                        
+
+                    </div>
+                </div>
+                <div id="orderpage-right">
+                    <table id="product-table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Product Brand</th>
+                            <th style="min-width: 100px;">Expiry Date</th>
+                            <th>Unit Price</th>
+                            <th>Stock</th>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="./product.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>

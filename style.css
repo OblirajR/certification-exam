@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#topbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 48px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px #ccc;
+    background-color: #fff;
+    justify-content: space-between;
+}
+#left-menu{
+    display: flex;
+    align-items: center;
+}
+#topbar-logo{
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+}
+#topbar-logo img{
+    width: 24px;
+    height: 28px;
+    margin-right: 8px;
+}
+#topbar-name{
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+}
+.topbar-menu{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    padding: 24px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0 10px;
+}
+.main-container{
+    margin-top: 100px;
+}
+.login-page{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 6px #ccc;
+}
+.login-page h1{
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+.loginpage-input{
+    width: 100%;
+    padding-top: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin-bottom: 16px;
+    outline: none;
+}
+.loginpage-button{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 24px;
+}
+#orders, #products, #user{
+    border-bottom: 5px solid #20b883;
+}
+#orderpage-left{
+    width: 180px;
+}
+#homepage-order{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 0;
+}
+#orderpage-left{
+    margin: 0;
+}
+#orderspage{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+    margin-top: 100px;
+}
+#homepage-filters{
+    display: flex;
+    flex-direction: column;
+}
+.filter-checkbox{
+    margin: 6px 0;
+    cursor: pointer;
+}
+#orderpage-right{
+    width: 100%;
+    margin: 6px 0;
+    cursor: pointer;
+}
+#homepage-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table > tr{
+    vertical-align: middle;
+}
+#homepage-table th{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.table-row td{
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+}
+#homepage-table td{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.homepage-secondary{
+    color: #8c8c8c;
+}
+.homepage-primary{
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+}
+.display{
+    display: none;
+}
+#user-main{
+    margin-top: 100px;
+}
+#user-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+}
+#user-head{
+    margin: 0;
+}
+#userlist-wrapper{
+    width: 100%;
+    padding: 24px 0;
+}
+#user-form{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+.usersearch{
+    width: calc(100% - 100px);
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin: 0 36px 0 0;
+    outline: none;
+}
+.userbutton{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#user-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#user-table th{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+#user-table td{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+#product-table td{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+#product-table th{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.expiredtab, .lowstacktab{
+    display: none;
+}
+.new-order1, .packed-order1, .transit-order1, .delivered-order1{
+    display: none;
+}
+.logout-menu{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    padding: 24px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0 10px;
+}
+.password{
+    display: none;
+}
